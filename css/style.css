@@ -1,0 +1,436 @@
+/* *++++++++++++++++++++++++++++++++++++ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ! ************************************* 
+                ! UTILY
+ ! ************************************* */
+ :root {
+    --black: black;
+    --white: white;
+    --lightblue: #0084fd;
+    --transparenceLightblue: #b5ddff;
+    --violet: #9593e6;
+    --darkgrey: #333333;
+    --gold: #fdc15f;
+    --grey: #5a6e7f; 
+}
+ul {
+    list-style-type: none;
+}
+.td_none {
+    text-decoration: none;
+}
+/* ! ************************************* 
+            ! FONT - WEIGHT
+ ! ************************************* */
+.fw_b {
+    font-weight: bold;
+}
+/* ! ************************************* 
+            ! LETTER - SPACING
+ ! ************************************* */
+.ls_3px {
+    letter-spacing: 3px;
+}
+/* ! ************************************* 
+            ! FONT - SIZE
+ ! ************************************* */
+ .fs_1-8rem {
+    font-size: 1.8rem;
+}
+.fs_1-1rem {
+    font-size: 1.1rem;
+}
+.fs_1-6rem {
+    font-size: 1.6rem;
+}
+.fs_2-5rem {
+    font-size: 2.5rem;
+}
+.fs_4rem {
+    font-size: 4rem;
+}
+.fs_6rem {
+    font-size: 6rem;
+}
+/* ! ************************************* 
+                ! LINE - HEIGHT
+ ! ************************************* */
+ .lh_30px {
+    line-height: 30px;
+}
+.lh_50px {
+    line-height: 50px;
+}
+.lh_60px {
+    line-height: 60px;
+}
+/* ! ************************************* 
+                ! TXT ALIGN
+ ! ************************************* */
+ .ta_c {
+    text-align: center;
+}
+/* ! ************************************* 
+                ! PADDING
+ ! ************************************* */
+ .p_rl-40px {
+    padding: 0 40px;
+}
+.p_tb_15px_rl_30px {
+    padding: 15px 30px;
+}
+.p-tb_40px {
+    padding: 40px 0;    
+}
+.p_b_60px {
+    padding-bottom: 60px;
+}
+/* ! ************************************* 
+                ! BACKGROUND COLORS
+ ! ************************************* */
+.bg_none {
+    background: none;
+}
+.bg_c_v--lightblue {
+    background-color: var(--lightblue);
+}
+.bg_c_transparenceLightblue {
+    background-color: var(--transparenceLightblue);
+}
+.bg_c_violet {
+    background-color: var(--violet);
+}
+.bg_v_withe {
+    background-color: var(--white);
+}
+.bg_c_darkgrey {
+    background-color: var(--darkgrey);
+}
+/* ! ************************************* 
+                ! BORDERS
+ ! ************************************* */
+.b_none {
+    border: none;
+}
+.br_20px {
+    border-radius: 20px;
+}
+.br_50 {
+    border-radius: 50%;
+}
+/* ! ************************************* 
+                ! MARGIN
+ ! ************************************* */
+.m_0-auto {
+    margin: 0 auto;
+}
+.m_tb_40px {
+    margin: 40px 0;
+}
+.mt_70px {
+    margin-top: 70px;
+}
+.mb_80px {
+    margin-bottom: 80px;
+}
+.m_rl_40px {
+    margin: 0 40px;
+}
+.m_t_15vh {
+    margin-top: 15vh;
+}
+/* ! ************************************* 
+                ! FLEX
+ ! ************************************* */
+.flex {
+    display: flex;
+}
+.fd_c {
+    flex-direction: column;
+}
+.jc_sb {
+    justify-content: space-between;
+}
+.ai_c {
+    align-items: center;
+}
+/* ! ************************************* 
+                ! WIDTH
+ ! ************************************* */
+.w_100 {
+    width: 100%;
+}
+.w_100px {
+    width: 100px;
+}
+.w_200px {
+    width: 200px;
+}
+.w_90 {
+    width: 90%;
+}
+.w_60px {
+    width: 60px;
+}
+/* ! ************************************* 
+                ! HEIGHT
+ ! ************************************* */
+.h_10vh {
+    height: 10vh;
+}
+.h_60px{
+    height: 60px;
+}
+.h_200px {
+    height: 200px;
+}
+/* ! ************************************* 
+                ! DISPLAY
+ ! ************************************* */
+.d_none {
+    display: none;
+}
+.d_ib {
+    display: inline-block;
+}
+/* ! ************************************* 
+                ! COLOR
+ ! ************************************* */
+.c_v-white {
+    color: var(--white);
+}
+.c_v-lightblue {
+    color: var(--lightblue);
+}
+.c_v-gray {
+    color: var(--grey);
+}
+.c_v-violet {
+    color: var(--violet);
+}
+.c_v-gold {
+    color: var(--gold);
+}
+.c_v-black {
+    color: var(--black);
+}
+/* ! ************************************* 
+            ! OBJECT FIT - COVER
+ ! ************************************* */
+.of_c {
+    object-fit: cover;
+}
+/* ! ************************************* 
+                ! POSITIONS
+ ! ************************************* */
+.pos_rel_qoute {
+    position: relative;
+}
+.pos_abs_quote {
+    position: absolute;
+    bottom: 70%;
+    left: 90%;
+}
+.pos_fix_nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+/* *++++++++++++++++++++++++++++++++++++ */
+/* ! ************************************* 
+           ? TABLET RESPONSIVE
+ ! ************************************* */
+@media screen and (min-width: 768px) {
+        .resp_fs_0-8rem {
+            font-size: .8rem;
+        }
+        .resp_fs_1-5rem {
+            font-size: 1.5rem;
+        }
+        .resp_fs_1-2rem {
+            font-size: 1.2rem;
+        }
+        .resp_fs_4rem {
+            font-size: 4rem;
+        }
+        .cover-introduzione {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: 15vh auto;
+            gap: 15px;
+        }
+        .cover-introduzione .item:nth-of-type(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: calc(100% / 2);
+            flex-grow: 1;
+            margin-top: 0; 
+        }
+        .cover-introduzione .item:nth-of-type(1) h3 {
+            margin-left: 40px;
+        }
+        .cover-introduzione .item:nth-of-type(1) img{
+            width: 300px;
+        }
+        .cover-introduzione .item:nth-of-type(1) .icon{
+            margin-left: 40px;
+            padding: 15px 40px;
+            letter-spacing: 3px;
+        }
+        .cover-introduzione .item:nth-of-type(2),
+        .cover-introduzione .item:nth-of-type(3),
+        .cover-introduzione .item:nth-of-type(4),
+        .cover-introduzione .item:nth-of-type(5){
+            width: calc(100% / 3 - 12px);
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .strategic-Planning .item:nth-of-type(1) img {
+            margin-top: 120px;
+        }
+        .Testimonials .item:nth-of-type(2) {
+            margin: 0 auto 70px;
+        }
+        .Testimonials .item:nth-of-type(2),
+        .Testimonials .item:nth-of-type(3),
+        .Testimonials .item:nth-of-type(4) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Testimonials .item img {
+            margin-left: 40px;
+        }
+        .benefits-container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .benefits-container .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100% / 2 - 16px);
+            margin-top: 0;
+        }
+        .benefits-container .item span:nth-of-type(2) {
+            text-align: center;
+            margin-right: 50%;
+        }
+        .about-us {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .about-us .item:nth-of-type(1) {
+            width: 50%;
+        }
+        .about-us .item:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+            padding-top: 40px;
+        }
+    }
+/* ! ************************************* 
+           ? DESKTOP RESPONSIVE
+ ! ************************************* */
+@media screen and (min-width: 992px) {
+        .d_none {
+            display: block;
+        }
+        .navbar-smartphone {
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+        .navbar-smartphone ul {
+            display: flex; 
+        }
+        .navbar-smartphone ul li {
+            padding: 20px;
+        }
+        .navbar-smartphone button {
+            display: none;
+        }
+        .cover-introduzione {
+            max-width: 1200px;
+        }
+        .cover-introduzione .item:nth-of-type(1) {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+        }
+        .col-prima {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .col-seconda {
+            width: 50%;
+            display: flex;
+            align-items: end;
+        }
+        .strategic-Planning {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .strategic-Planning .item:nth-of-type(1),
+        .strategic-Planning .item:nth-of-type(2)  {
+            max-width: calc(1200px / 2);
+            margin: 20px;
+        }
+        .strategic-Planning .item:nth-of-type(1) h3 {
+            font-size: 3rem;
+        }
+        .strategic-Planning .item:nth-of-type(2) h4 {
+            font-size: 2rem;
+        }
+        .Testimonials {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .benefits .item {
+            width: calc(100% / 3 - 20px);
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .benefits-container {
+            max-width: 1200px;
+        }
+        .about-us {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about-us .item:nth-of-type(1) {
+            width: 66%;
+            line-height: 100px;
+        }
+        .about-us .item:nth-of-type(2) {
+            width: 33%;
+        }
+        .get-started .item {
+            max-width: 1200px;
+            width: 30%;
+            margin: 0 auto;
+        }
+        .footer .item {
+            width: 30%;
+            margin: 0 auto;
+        }
+    } 
